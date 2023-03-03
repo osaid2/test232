@@ -21,12 +21,12 @@ class MainActivity2 : AppCompatActivity() {
         delete.setOnClickListener {
             var results = false;
             progressBar2.visibility = View.VISIBLE
-            db.collection("person")
+            db.collection("fba")
                 .get()
                 .addOnSuccessListener { result ->
 
                     for (document in result) {
-                        db.collection("person").document(document.id).delete().addOnSuccessListener { e->
+                        db.collection("fba").document(document.id).delete().addOnSuccessListener { e->
                         }
                         getData()
                         progressBar2.visibility = View.GONE
@@ -37,7 +37,7 @@ class MainActivity2 : AppCompatActivity() {
     }
     fun getData() {
 
-        db.collection("person")
+        db.collection("fba")
             .get()
             .addOnSuccessListener { result ->
                 progressBar2.visibility = View.GONE

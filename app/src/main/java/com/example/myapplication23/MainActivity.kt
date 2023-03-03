@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
                     "address" to "$address"
 
                 )
-                db.collection("person").add(person).addOnSuccessListener {e ->
+                db.collection("fba").add(person).addOnSuccessListener {e ->
                     progressBar2.visibility = View.GONE
 
                     Toast.makeText(this, "True", Toast.LENGTH_SHORT).show()
