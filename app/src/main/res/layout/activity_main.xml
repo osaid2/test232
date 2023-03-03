@@ -25,12 +25,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/PersonID"
+        android:id="@+id/PersonNumber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:hint="Person ID"
+        android:hint="Number"
         android:inputType="text"
         android:minHeight="48dp"
         android:textColor="@color/white"
@@ -41,12 +41,12 @@
         app:layout_constraintTop_toBottomOf="@+id/PersonName" />
 
     <EditText
-        android:id="@+id/PersonAge"
+        android:id="@+id/PersonAddress"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:ems="10"
-        android:hint="Person Age"
+        android:hint="Address"
         android:inputType="text"
         android:minHeight="48dp"
         android:textColor="@color/white"
@@ -54,7 +54,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PersonID" />
+        app:layout_constraintTop_toBottomOf="@+id/PersonNumber" />
 
     <Button
         android:id="@+id/save"
@@ -67,5 +67,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PersonAge" />
+        app:layout_constraintTop_toBottomOf="@+id/PersonAddress" />
+    <Button
+        android:id="@+id/show"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Show all users"
+        app:layout_constraintTop_toBottomOf="@id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="123dp"
+        android:layout_height="149dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
