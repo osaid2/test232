@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
 
             if(name.isEmpty() || number.isEmpty() || address.isEmpty() ){
-                progressBar2.visibility = View.GONE
+                progressBar.visibility = View.GONE
                 Toast.makeText(this, "please add data in field", Toast.LENGTH_SHORT).show()
 
 
