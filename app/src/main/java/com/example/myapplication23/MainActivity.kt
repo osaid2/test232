@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         save.setOnClickListener {
-            progressBar2.visibility = View.VISIBLE
+            progressBar.visibility = View.VISIBLE
             var name = PersonName.text.toString()
             var number = PersonNumber.text.toString()
             var address = PersonAddress.text.toString()
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
                 )
                 db.collection("fba").add(person).addOnSuccessListener {e ->
-                    progressBar2.visibility = View.GONE
+                    progressBar.visibility = View.GONE
 
                     Toast.makeText(this, "True", Toast.LENGTH_SHORT).show()
 
